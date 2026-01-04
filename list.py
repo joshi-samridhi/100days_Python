@@ -46,4 +46,130 @@ sort(reverse=True)	Sorts the list in descending order	             list.sort(rev
 sorted(list)	  Returns a new sorted list                            sorted(list)
 reverse()	     Reverses the list in-place	                           list.reverse()
 
+
 """
+
+
+'''
+list1= [10, 20, 30, 40, 50]
+list2= [60, 70, 80, 90, 100]
+
+list1.append(60)                  # append will add 60 at the end of list1
+# print("After append :", list1) 
+
+print(list1 + list2)          # Concatenate two lists
+
+list1.extend(list2)           # extend will add list2 elements to list1
+'''
+
+# create a list consisting of numbers between range 1 to 10
+# list3= list(range(1,11))
+# print("Original list :", list3)
+
+'''
+list1=[]
+for i in range(1,11):
+     list1.append(i)
+print(list1)
+'''
+
+
+# create a list consisting of even 1 to 10
+'''
+list1=[]
+for i in range(1,11):
+    if i%2==0:
+        list1.append(i)
+print(list1)        
+'''
+
+# create a list consisting of ODD 1 to 10
+'''
+list1=[]
+for i in range(1,11,2):
+ list1.append(i)
+print(list1) '''
+
+# Just by a single line of code we can make a list
+
+# Starting i is initializing the vale
+
+# k = [i for i in range (1,11)]   # Focus on code i for i in range is written
+# print(k)
+'''
+k = [i*i for i in range (1,11,2)]   # Square of even numbers  [1, 9, 25, 49, 81]
+print(k)
+
+k = [i+1 for i in range (1,11)]   # Square of even numbers  [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+print(k)
+
+k = [i for i in range (1,11) if i%2==0]   # Square of even numbers  [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+print(k)
+'''
+
+
+'''
+
+
+#         TUPLES
+# Uppercase the element of list str.upper
+
+country ="india"  # single quotes or double quotes doesn't matter
+Upper_list= [str.upper(i) for i in country]
+print(Upper_list)
+
+
+# 1.	Using Parentheses ()
+colors = ("red", "green", "blue")
+print("colors=",colors)
+numbers = (1, 2, 3, 4, 5)
+print("numbers=",numbers)
+mixed = (1, "hello", 3.14, True)
+print("mixed list items=",mixed)
+nested = (1, [2, 3], (4, 5, 6))
+print("nested list =",nested)
+# 2.	Without Parentheses (Comma-Separated) also_
+numbers = 1, 2, 3, 4, 5
+print(numbers)
+# 3.	 Using the tuple() Constructor
+new_tuple = tuple(("apple", "banana", "cherry"))
+print(new_tuple)
+ # use double brackets
+list_items = ["x", "y", "z"]
+# Creating a tuple from a list
+tuple_items = tuple(list_items) # convert list to tuple
+print(tuple_items)
+# ('x', 'y', 'z’)
+# 4.	Single-Item Tuple tuple
+'''
+
+
+# tuple1 = 7,        # Imporatnt!! In interview they will ask give a single value and show that its type is tuple
+# print(type(tuple1))
+
+
+# Add elemet in tuple using LIST
+# tuple has (), List has []
+# fiest make changes in list
+
+'''
+x = (1, 2, 3, 4)
+t1 = list(x)    # Make it to list 
+print(type(t1))
+
+t1.append(5)
+print(t1)
+  # covert list to tuple
+x=tuple(t1)
+print(x)
+'''
+
+emp_details={
+    'EmployeeId':[150,151,152],
+    'EmployeeName':['Prakash','Atul','Rohan'],
+    'Designation':['Sr.Sales Mgr','Lead Auditor','Server Admin']
+    }
+import pandas as pd
+
+emp_df=pd.DataFrame(emp_details)
+emp_df
