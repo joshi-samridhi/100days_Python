@@ -173,3 +173,19 @@ import pandas as pd
 
 emp_df=pd.DataFrame(emp_details)
 emp_df
+
+
+'''
+import math
+
+print("ceil value :", math.ceil(15.23))  # always give high range
+# print("ceil value :", math.floor(15.23))  always give low range
+print("ceil value :", round(15.23))     # It will compare whether its graeter than 5 or nor 
+
+# Cube of number
+print(9**3)      # ** is is to
+
+# Square root
+print("Square root : ", math.sqrt(64))
+
+'''
